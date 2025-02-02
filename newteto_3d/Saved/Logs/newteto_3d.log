@@ -1814,3 +1814,192 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2025.02.02-08.16.38:881][380]LogMeshUtilities: Finished distance field build in 2.0s - 126x126x126 sparse distance field, 2.0Mb total, 0.1Mb always loaded, 55% occupied, 522 triangles, StaticMesh_HLOD0_Instancing_3
 [2025.02.02-08.16.40:130][470]LogMeshUtilities: Finished distance field build in 1.2s - 126x126x126 sparse distance field, 1.5Mb total, 0.1Mb always loaded, 40% occupied, 522 triangles, StaticMesh_HLOD0_Instancing_3
 [2025.02.02-08.16.49:580][275]LogD3D12RHI: Compiled PathTracingMainRG for RTPSO in 29886.94 ms.
+[2025.02.02-08.19.34:040][776]LogShaderCompilers: Display: ================================================
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Total job queries 11,627, among them cache hits 0 (0.00%), DDC hits 0 (0.00%), Duplicates 2,680 (23.05%)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Tracking 8,947 distinct input hashes that result in 8,459 distinct outputs (94.55%)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: RAM used: 6.36 MiB of 819.20 MiB budget. Usage: 0.78%
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Shaders Compiled: 8,947
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Jobs assigned 8,947, completed 8,947 (100%)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Average time worker was idle: 0.21 s
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Time job spent in pending queue: average 287.91 s, longest 597.78 s
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Job execution time: average 6.27 s, max 110.27 s
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Job life time (pending + execution): average 294.18 s, max 598.53
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Shader code size: average 14.319 KiB, min 1.16 KiB, max 330.166 KiB
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 646.85 s
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.22%
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Jobs were issued in 956 batches (only local compilation was used), average 9.36 jobs/batch
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Average processing rate: 13.83 jobs/sec
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Total thread time: 5,672.196 s
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Total thread preprocess time: 113.359 s
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Percentage time preprocessing: 2.00%
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Effective parallelization: 8.77 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display:                                          FTSRRejectShadingCS (compiled   27 times, average 25.75 sec, max 87.00 sec, min 1.27 sec)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display:                                               FPathTracingRG (compiled    1 times, average 16.79 sec, max 16.79 sec, min 16.79 sec)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display:                                   FSSDTemporalAccumulationCS (compiled   10 times, average 9.32 sec, max 11.06 sec, min 5.95 sec)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display:                                        FCloudRenderViewPS101 (compiled    1 times, average 7.75 sec, max 7.75 sec, min 7.75 sec)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display:                                        FCloudRenderViewPS011 (compiled    1 times, average 6.79 sec, max 6.79 sec, min 6.79 sec)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display:                                             FDeferredLightPS - 12.85% of total time (compiled  454 times, average 1.61 sec, max 4.85 sec, min 1.17 sec)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display:                                          FTSRRejectShadingCS - 12.26% of total time (compiled   27 times, average 25.75 sec, max 87.00 sec, min 1.27 sec)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display:                                        FMicropolyRasterizeCS - 10.59% of total time (compiled  260 times, average 2.31 sec, max 5.55 sec, min 0.00 sec)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display:                              FVolumetricFogLightScatteringCS - 5.30% of total time (compiled  480 times, average 0.63 sec, max 3.91 sec, min 0.28 sec)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 4.49% of total time (compiled   68 times, average 3.74 sec, max 9.04 sec, min 1.82 sec)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: === Material stats ===
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Materials Translated:    129
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Material Total Translate Time: 0.09 s
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Material Translation Only: 0.04 s (47%)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2025.02.02-08.19.34:041][776]LogShaderCompilers: Display: ================================================
+[2025.02.02-08.21.16:334][334]LogSlate: Window '変更を表示' being destroyed
+[2025.02.02-08.21.16:339][334]LogSlate: Window '変更を表示' being destroyed
+[2025.02.02-08.21.47:865][178]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 330.529846
+[2025.02.02-08.21.48:087][199]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-08.21.48:087][199]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 330.742981, Update Interval: 308.646515
+[2025.02.02-08.22.35:058][883]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_0
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: ================================================
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Total job queries 11,637, among them cache hits 0 (0.00%), DDC hits 0 (0.00%), Duplicates 2,685 (23.07%)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Tracking 8,952 distinct input hashes that result in 8,462 distinct outputs (94.53%)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: RAM used: 6.36 MiB of 819.20 MiB budget. Usage: 0.78%
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Shaders Compiled: 8,952
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Jobs assigned 8,952, completed 8,952 (100%)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Average time worker was idle: 1.90 s
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Time job spent in pending queue: average 287.75 s, longest 597.78 s
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Job execution time: average 6.27 s, max 110.27 s
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Job life time (pending + execution): average 294.02 s, max 598.53
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Shader code size: average 14.315 KiB, min 1.16 KiB, max 330.166 KiB
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 649.18 s
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.22%
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Jobs were issued in 961 batches (only local compilation was used), average 9.32 jobs/batch
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Average processing rate: 13.79 jobs/sec
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Total thread time: 5,676.818 s
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Total thread preprocess time: 113.5 s
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Percentage time preprocessing: 2.00%
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Effective parallelization: 8.74 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display:                                          FTSRRejectShadingCS (compiled   27 times, average 25.75 sec, max 87.00 sec, min 1.27 sec)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display:                                               FPathTracingRG (compiled    1 times, average 16.79 sec, max 16.79 sec, min 16.79 sec)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display:                                   FSSDTemporalAccumulationCS (compiled   10 times, average 9.32 sec, max 11.06 sec, min 5.95 sec)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display:                                        FCloudRenderViewPS101 (compiled    1 times, average 7.75 sec, max 7.75 sec, min 7.75 sec)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display:                                        FCloudRenderViewPS011 (compiled    1 times, average 6.79 sec, max 6.79 sec, min 6.79 sec)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display:                                             FDeferredLightPS - 12.84% of total time (compiled  454 times, average 1.61 sec, max 4.85 sec, min 1.17 sec)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display:                                          FTSRRejectShadingCS - 12.25% of total time (compiled   27 times, average 25.75 sec, max 87.00 sec, min 1.27 sec)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display:                                        FMicropolyRasterizeCS - 10.58% of total time (compiled  260 times, average 2.31 sec, max 5.55 sec, min 0.00 sec)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display:                              FVolumetricFogLightScatteringCS - 5.30% of total time (compiled  480 times, average 0.63 sec, max 3.91 sec, min 0.28 sec)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 4.48% of total time (compiled   68 times, average 3.74 sec, max 9.04 sec, min 1.82 sec)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: === Material stats ===
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Materials Translated:    129
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Material Total Translate Time: 0.09 s
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Material Translation Only: 0.04 s (47%)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2025.02.02-08.25.34:351][915]LogShaderCompilers: Display: ================================================
+[2025.02.02-08.26.59:697][171]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 642.363098
+[2025.02.02-08.27.00:698][174]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-08.27.00:698][174]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 643.029297, Update Interval: 331.929077
+[2025.02.02-08.32.38:056][918]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 980.723022
+[2025.02.02-08.32.39:059][921]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-08.32.39:059][921]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 981.390747, Update Interval: 306.809906
+[2025.02.02-08.37.54:748][868]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1297.414307
+[2025.02.02-08.37.55:749][871]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-08.37.55:749][871]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1298.081787, Update Interval: 325.060577
+[2025.02.02-08.43.37:303][118]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1639.972900
+[2025.02.02-08.43.37:533][139]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-08.43.37:533][139]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1640.191040, Update Interval: 313.722351
+[2025.02.02-08.49.39:756][814]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2002.427368
+[2025.02.02-08.49.40:756][817]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-08.49.40:756][817]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2003.094238, Update Interval: 301.254303
+[2025.02.02-08.55.17:836][983]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2340.491943
+[2025.02.02-08.55.18:041][999]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-08.55.18:041][999]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2340.682373, Update Interval: 304.581451
+[2025.02.02-08.55.18:875][ 67]LogSlate: Window 'ブループリントを検索' being destroyed
+[2025.02.02-08.55.18:881][ 67]LogSlate: Window 'ブループリントを検索' being destroyed
+[2025.02.02-08.57.34:346][481]LogSlate: Took 0.001551 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2025.02.02-08.59.33:470][139]LogSlate: Window '親クラスを選択' being destroyed
+[2025.02.02-08.59.33:489][139]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2025.02.02-08.59.33:518][139]LogContentBrowser: Creating deferred item: NewBlueprint
+[2025.02.02-08.59.33:548][140]LogContentBrowser: Renaming the item being created (Deferred Item: NewBlueprint).
+[2025.02.02-09.00.23:534][435]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_TetorisManager
+[2025.02.02-09.00.23:626][435]LogContentBrowser: End creating deferred item NewBlueprint
+[2025.02.02-09.00.29:622][935]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/BP_TetorisManager.BP_TetorisManager
+[2025.02.02-09.00.29:626][935]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_1
+[2025.02.02-09.00.29:852][935]LogStreaming: Display: FlushAsyncLoading(494): 1 QueuedPackages, 0 AsyncPackages
+[2025.02.02-09.00.32:016][935]LogStaticMesh: Display: スタティックメッシュをビルド中 PhAT_FloorBox (推定必須メモリ：0.024887 MB)...
+[2025.02.02-09.00.32:017][935]LogStaticMesh: Built static mesh [0.00s] /Engine/EditorMeshes/PhAT_FloorBox.PhAT_FloorBox
+[2025.02.02-09.00.38:823][309]LogSlate: Took 0.011423 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2025.02.02-09.01.06:072][990]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2025.02.02-09.01.06:078][990]LogFileHelpers: Editor autosave (incl. external actors) for '/Temp/Untitled_1' took 0.133
+[2025.02.02-09.01.06:080][990]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BP_TetorisManager] ([2] browsable assets)...
+[2025.02.02-09.01.06:081][990]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_TetorisManager]
+[2025.02.02-09.01.06:081][990]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_TetorisManager" FILE="../../../../../../unreal/newteto/newteto_3d/Saved/Autosaves/Game/BP_TetorisManager_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2025.02.02-09.01.06:088][990]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/BP_TetorisManager_Auto1
+[2025.02.02-09.01.06:088][990]LogSavePackage: Moving '../../../../../../unreal/newteto/newteto_3d/Saved/BP_TetorisManager_Auto1F726E98D49D1972BF5C684BA92D95AF4.tmp' to '../../../../../../unreal/newteto/newteto_3d/Saved/Autosaves/Game/BP_TetorisManager_Auto1.uasset'
+[2025.02.02-09.01.06:090][990]LogFileHelpers: Auto-saving content packages took 0.012
+[2025.02.02-09.01.19:708][548]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2702.370117
+[2025.02.02-09.01.20:708][551]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-09.01.20:708][551]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2703.035645, Update Interval: 317.906433
+[2025.02.02-09.02.41:013][683]LogSlate: Took 0.008491 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2025.02.02-09.05.02:528][ 61]LogUObjectHash: Compacting FUObjectHashTables data took   1.45ms
+[2025.02.02-09.05.56:868][303]LogUObjectHash: Compacting FUObjectHashTables data took   1.21ms
+[2025.02.02-09.07.13:741][966]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3056.418701
+[2025.02.02-09.07.14:742][969]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-09.07.14:742][969]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3057.085693, Update Interval: 321.376373
+[2025.02.02-09.08.05:747][123]LogDerivedDataCache: C:/Users/grand/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2025.02.02-09.10.23:735][871]LogSlate: Took 0.010255 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2025.02.02-09.13.16:417][851]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3419.109863
+[2025.02.02-09.13.16:633][871]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-09.13.16:633][871]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3419.315430, Update Interval: 321.938538
+[2025.02.02-09.13.28:219][886]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2025.02.02-09.13.28:224][886]LogFileHelpers: Editor autosave (incl. external actors) for '/Temp/Untitled_1' took 0.028
+[2025.02.02-09.13.28:224][886]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BP_TetorisManager] ([2] browsable assets)...
+[2025.02.02-09.13.28:225][886]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_TetorisManager]
+[2025.02.02-09.13.28:225][886]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_TetorisManager" FILE="../../../../../../unreal/newteto/newteto_3d/Saved/Autosaves/Game/BP_TetorisManager_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2025.02.02-09.13.28:230][886]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/BP_TetorisManager_Auto2
+[2025.02.02-09.13.28:230][886]LogSavePackage: Moving '../../../../../../unreal/newteto/newteto_3d/Saved/BP_TetorisManager_Auto2AEFA8CFF4FAB43A7566BE29B8DB72E21.tmp' to '../../../../../../unreal/newteto/newteto_3d/Saved/Autosaves/Game/BP_TetorisManager_Auto2.uasset'
+[2025.02.02-09.13.28:231][886]LogFileHelpers: Auto-saving content packages took 0.007
+[2025.02.02-09.18.15:073][351]LogEditorTransaction: Undo ノードを追加
+[2025.02.02-09.19.27:512][775]LogEditorTransaction: Undo PIEリンクを作成
+[2025.02.02-09.19.37:747][461]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3800.450928
+[2025.02.02-09.19.37:981][479]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-09.19.37:981][479]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3800.671875, Update Interval: 327.809082
+[2025.02.02-09.24.43:921][482]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2025.02.02-09.24.43:929][482]LogFileHelpers: Editor autosave (incl. external actors) for '/Temp/Untitled_1' took 0.032
+[2025.02.02-09.24.43:929][482]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BP_TetorisManager] ([2] browsable assets)...
+[2025.02.02-09.24.43:929][482]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_TetorisManager]
+[2025.02.02-09.24.43:929][482]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_TetorisManager" FILE="../../../../../../unreal/newteto/newteto_3d/Saved/Autosaves/Game/BP_TetorisManager_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2025.02.02-09.24.43:936][482]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/BP_TetorisManager_Auto3
+[2025.02.02-09.24.43:936][482]LogSavePackage: Moving '../../../../../../unreal/newteto/newteto_3d/Saved/BP_TetorisManager_Auto36D1C924A425F1692CF15D293CBC91EAB.tmp' to '../../../../../../unreal/newteto/newteto_3d/Saved/Autosaves/Game/BP_TetorisManager_Auto3.uasset'
+[2025.02.02-09.24.43:937][482]LogFileHelpers: Auto-saving content packages took 0.008
+[2025.02.02-09.24.47:212][707]LogUObjectHash: Compacting FUObjectHashTables data took   1.49ms
+[2025.02.02-09.25.54:950][719]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4177.663574
+[2025.02.02-09.25.55:949][722]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-09.25.55:949][722]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4178.330078, Update Interval: 359.168671
+[2025.02.02-09.28.19:138][367]LogUObjectHash: Compacting FUObjectHashTables data took   1.26ms
+[2025.02.02-09.30.06:848][391]LogUObjectHash: Compacting FUObjectHashTables data took   2.02ms
+[2025.02.02-09.30.28:706][794]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.02.02-09.30.28:761][794]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BP_TetorisManager] ([2] browsable assets)...
+[2025.02.02-09.30.28:761][794]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_TetorisManager]
+[2025.02.02-09.30.28:761][794]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_TetorisManager" FILE="../../../../../../unreal/newteto/newteto_3d/Content/BP_TetorisManager.uasset" SILENT=true
+[2025.02.02-09.30.28:767][794]LogSavePackage: Moving output files for package: /Game/BP_TetorisManager
+[2025.02.02-09.30.28:767][794]LogSavePackage: Moving '../../../../../../unreal/newteto/newteto_3d/Saved/BP_TetorisManager10450F4F48DD80E61A8D72AE82B7A788.tmp' to '../../../../../../unreal/newteto/newteto_3d/Content/BP_TetorisManager.uasset'
+[2025.02.02-09.30.28:782][794]LogFileHelpers: InternalPromptForCheckoutAndSave took 75.732 ms (total: 999.006 ms)
+[2025.02.02-09.30.28:838][794]LogContentValidation: Display: Starting to validate 1 assets
+[2025.02.02-09.30.28:838][794]LogContentValidation: Enabled validators:
+[2025.02.02-09.30.28:838][794]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.02.02-09.30.28:838][794]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.02.02-09.30.28:838][794]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.02.02-09.30.28:838][794]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.02.02-09.30.28:838][794]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.02.02-09.30.28:838][794]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.02.02-09.30.28:838][794]AssetCheck: /Game/BP_TetorisManager アセットを検証しています
+[2025.02.02-09.32.44:070][616]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4586.780762
+[2025.02.02-09.32.45:069][619]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.02-09.32.45:070][620]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4587.446777, Update Interval: 308.567780
